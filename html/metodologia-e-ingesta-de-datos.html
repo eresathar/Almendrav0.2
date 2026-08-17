@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es" id="exe-page-mrrkm07q-63d3d6e04">
+<head>
+<meta charset="utf-8">
+<meta name="generator" content="eXeLearning v4.0.3">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Metodología e ingesta de datos | ALMENDRA v0.2</title>
+<link rel="icon" type="image/x-icon" href="../libs/favicon.ico">
+<script>document.querySelector("html").classList.add("js");</script><script src="../libs/jquery/jquery.min.js"> </script><script src="../libs/common_i18n.js"> </script><script src="../libs/common.js"> </script><script src="../libs/exe_export.js"> </script><script>window.exeXapi={"odeId":"20260717140626S5W5PT","packageTitle":"ALMENDRA v0.2","language":"es"};</script><script src="../libs/xapi/exe_xapi.js"> </script><script src="../libs/bootstrap/bootstrap.bundle.min.js"> </script><link rel="stylesheet" href="../libs/bootstrap/bootstrap.min.css">
+<script src="../idevices/text/text.js"></script><link rel="stylesheet" href="../idevices/text/text.css">
+<link rel="stylesheet" href="../content/css/base.css"><script src="../theme/style.js"> </script><link rel="stylesheet" href="../theme/style.css">
+</head>
+<body class="exe-export exe-web-site">
+<script>document.body.className+=" js"</script>
+<div class="exe-content exe-export pre-js siteNav-hidden"><a href="#page-mrrkm07q-63d3d6e04" id="skipNav">Skip to content</a> <nav id="siteNav">
+<ul>
+<li> <a href="../index.html" class="main-node daddy">Introducción y origen de ALMENDRA</a>
+<ul class="other-section">
+<li> <a href="../html/desafios-de-la-docencia-actual.html" class="no-ch">Desafíos de la docencia actual</a>
+</li>
+<li> <a href="../html/genesis-del-proyecto.html" class="no-ch">Génesis del proyecto</a>
+</li>
+<li> <a href="../html/hacia-un-sistema-experto.html" class="no-ch">Hacia un sistema experto</a>
+</li>
+<li> <a href="../html/primera-version-almendra-v01.html" class="no-ch">Primera versión Almendra v0.1</a>
+</li>
+</ul>
+</li>
+<li class="current-page-parent"> <a href="../html/arquitectura-del-programa-y-metodologia-del-sistem.html" class="daddy">Arquitectura del programa y metodología del sistema</a>
+<ul class="other-section">
+<li class="active"> <a href="../html/metodologia-e-ingesta-de-datos.html" class="active no-ch">Metodología e ingesta de datos</a>
+</li>
+<li> <a href="../html/logica-algoritmica-de-normalizacion-curricular.html" class="no-ch">Lógica algorítmica de normalización curricular</a>
+</li>
+<li> <a href="../html/metodologia-confeccion-informes-diagnostico.html" class="daddy">Metodología confección informes diagnóstico</a>
+<ul class="other-section">
+<li> <a href="../html/atencion-a-la-diversidad.html" class="no-ch">Atención a la diversidad</a>
+</li>
+<li> <a href="../html/modelado-analitico-del-grupo-clase.html" class="no-ch">Modelado analítico del grupo clase</a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li> <a href="../html/metodologia-generacion-archivos-markdown.html" class="no-ch">Metodología generación archivos markdown</a>
+</li>
+<li> <a href="../html/guia-de-instalacion-y-requisitos-tecnicos.html" class="no-ch">Guía de instalación y requisitos técnicos</a>
+</li>
+<li> <a href="../html/tutorial-de-funcionamiento-y-flujo-de-trabajo.html" class="daddy">Tutorial de funcionamiento y flujo de trabajo</a>
+<ul class="other-section">
+<li> <a href="../html/exploracion-interfaz-y-estructura-de-menus.html" class="no-ch">Exploración interfaz y estructura de menús</a>
+</li>
+<li> <a href="../html/carga-de-expedientes-y-creacion-de-grupos-clase.html" class="no-ch">Carga de expedientes y creación de grupos clase</a>
+</li>
+<li> <a href="../html/obtencion-de-informes-diagnostico-y-analiticas.html" class="no-ch">Obtención de informes diagnóstico y análiticas</a>
+</li>
+<li> <a href="../html/generacion-de-prompts-maestros-en-formato-markdown.html" class="no-ch">Generación de prompts maestros en formato Markdown.md para modelos externos</a>
+</li>
+</ul>
+</li>
+</ul>
+</nav><main id="page-mrrkm07q-63d3d6e04" class="page"> 
+<header class="main-header">
+<div class="package-header"><p class="package-title">ALMENDRA v0.2</p>
+<p class="package-subtitle">Asistente de Lógica y Mejora Educativa Normalizada mediante Diagnóstico y Recomendación Adaptativa</p></div>
+<div class="page-header"><h1 class="page-title">Metodología e ingesta de datos</h1></div>
+</header><div id="page-content-page-mrrkm07q-63d3d6e04" class="page-content">
+<article id="block-mrp5egh7-zv36b6x1r" class="box">
+<header class="box-head">
+<div class="box-icon exe-icon">
+<img src="../theme/icons/history.svg" alt="">
+</div>
+<h1 class="box-title">Arquitectura de integración con SIGAD Académica</h1>
+</header>
+<div class="box-content">
+<div id="idevice-1784305460200-dscxgomsk" class="idevice_node text" data-idevice-path="../idevices/text/" data-idevice-type="text" data-idevice-component-type="json" data-idevice-json-data="{&quot;ideviceId&quot;:&quot;idevice-1784305460200-dscxgomsk&quot;}">
+<div class="exe-text-template">
+    <p style="text-align: justify;">El primer reto operativo del <strong>ALMENDRA es eliminar la introducción manual de la información</strong> del alumnado. Para lograr un despliegue ágil y en bloque, el <strong>software se ha diseñado para poder integrarse con el ecosistema administrativo</strong> oficial de la Comunidad Autonoma <strong>de Aragón SIGAD ACADÉMICA</strong>.</p>
+<ul>
+<li style="text-align: justify;"><strong>Extracción en origen</strong>: El docente descarga los <strong>archivos correspondientes a los cuadernos del profesor</strong> de cada estudiante <strong>en formato .xls</strong> directamente desde la plataforma de <strong>SIGAD ACADÉMICA</strong>. <strong>Este paso es el único que todavía se mantiene manual y viene derivado por el propio tratamiento</strong> que debe realizarse de esta <strong>información sumamente sensible.<br /><br /></strong><strong></strong><strong></strong></li>
+<li style="text-align: justify;"><strong>Carga en bloque (Ingesta masiva)</strong>: Una vez <strong>obtenidos todos los archivos</strong> de todos y cada uno de los estudiantes de nuestra clase en <strong>formato .xls</strong> éstos <strong>se introducen directamente y en bloque en la interfaz de ALMENDRA</strong>. El sistema <strong>no requiere que el usuario procese, limipie o divida la información</strong> de manera previa.</li>
+</ul>
+<figure class="exe-figure position-center" style="width: 1422px;">
+<div class="figcaption header"><strong>Interfaz ingesta masiva expedientes para análisis y diagnóstico académico</strong></div>
+<img src="../content/resources/imagen62.jpg" width="1422" height="653" alt="" /></figure>
+<p style="text-align: justify;"><br /><br /></p>
+</div>
+</div>
+</div>
+</article><article id="block-mrrkpacj-agnmzpat9" class="box">
+<header class="box-head">
+<div class="box-icon exe-icon">
+<img src="../theme/icons/diary_alt.svg" alt="">
+</div>
+<h1 class="box-title">Mecanismo de parsing</h1>
+</header>
+<div class="box-content">
+<div id="idevice-1784452092067-x1cad4ahu" class="idevice_node text" data-idevice-path="../idevices/text/" data-idevice-type="text" data-idevice-component-type="json" data-idevice-json-data="{&quot;ideviceId&quot;:&quot;idevice-1784452092067-x1cad4ahu&quot;}">
+<div class="exe-text-template">
+    <p style="text-align: justify;">El software <strong>ALMENDRA</strong> <strong>incluye un método de parseo </strong>de estos archivos (mediante análisis sintáctico) y lee estos archivos para <strong>extraer de manera inequívoca la identidad e información de cada estudiante</strong> incluyendo las materias cursadas en su historial junto con su calificación (tanto cuantitativa como cualitativa).</p>
+<p style="text-align: justify;">Mediante estas técnicas de escaneo matricial, el algoritmo ejecuta las siguientes rutinas de extracción:</p>
+<ul>
+<li style="text-align: justify;"><strong>Identidad del Alumno</strong>: Busca las palabras "APELLIDOS, NOMBRE", "ALUMNO", o "EXPEDIENTE DE". Si no encuentra la etiqueta, usa una expresión regular (regex) en las primeras 10 filas que busca patrones con el formato APELLIDO, NOMBRE (todo en mayúsculas). Si todo falla, lo nombra "Alumno Desconocido".<br /><br /><strong>Etapa Educativa</strong>: Busca "ENSEÑANZA", "ESTUDIOS", o "ETAPA". Con este valor decide si el alumno pertenece a "PRIMARIA" o "SECUNDARIA" (por defecto asume Primaria si no hay datos).<br /><br /></li>
+<li style="text-align: justify;"><strong>Necesidades Educativas (NEE/ACNEAE)</strong>: Rastrea las filas buscando palabras como "SITUACION", "NECESIDAD", "NEE" y las medidas adoptadas buscando "ACTUACION", "MEDIDA". Si encuentra algo, lo une bajo un perfil ACNEAE; si no, etiqueta al alumno con perfil "Ordinario".</li>
+</ul>
+<p><br /></p>
+<figure class="exe-figure position-center" style="width: 746px;">
+<div class="figcaption header"><strong>Vista previa formato documento expediente estudiante en formato .xls</strong></div>
+<img src="../content/resources/imagen7.jpg" width="746" height="725" alt="" /></figure>
+</div>
+</div>
+</div>
+</article><article id="block-mrrkqm7m-b1wj7ubne" class="box">
+<header class="box-head">
+<div class="box-icon exe-icon">
+<img src="../theme/icons/download.svg" alt="">
+</div>
+<h1 class="box-title">Extracción secuencial del historial académico</h1>
+</header>
+<div class="box-content">
+<div id="idevice-1784452154098-uqhcstsxf" class="idevice_node text" data-idevice-path="../idevices/text/" data-idevice-type="text" data-idevice-component-type="json" data-idevice-json-data="{&quot;ideviceId&quot;:&quot;idevice-1784452154098-uqhcstsxf&quot;}">
+<div class="exe-text-template">
+    <p style="text-align: justify;">Una vez parametrizado el perfil del alumno, el software actúa como un <strong>escáner con estado y memoria persistente, evaluando el documento fila por fila para reconstruir el histórico de calificaciones</strong> bajo la siguiente lógica algorítmica:</p>
+<ul>
+<li style="text-align: justify;"><strong>Determinación del marco normativo y temporal</strong>: El sistema localiza los rangos correspondientes al año escolar (ej. 2024/2025) y el nivel del curso entre paréntesis (ej. 1º). A partir de ahí, identifica la ley educativa reguladora mediante el rastreo de los acrónimos LOMLOE o LOMCE. Esta distinción es crítica, ya que bifurca el modelo matemático de cálculo y conversión que se aplicará con posterioridad.<br /><br /></li>
+<li style="text-align: justify;"><strong>Aislamiento de asignaturas</strong>: Se examinan las celdas descartando valores puramente numéricos, calificaciones cualitativas o cadenas de texto prohibidas dentro del árbol académico (tales como "TUTORÍA", "FALTAS", "OBSERVACIONES" o "CONDUCTA"). Al validar una materia legítima, se aplica una función de limpieza de cadena (string sanitization) para remover sufijos e indicadores de curso (ej. transformar "Matemáticas (2º)" en "Matemáticas"), garantizando la perfecta concordancia con los identificadores de la base de datos local.<br /><br /></li>
+<li style="text-align: justify;"><strong>Conversión y normalización de calificaciones</strong>: Tras validar la asignatura, el motor inspecciona las celdas adyacentes de la derecha. Si la calificación es de carácter cualitativo, invoca un diccionario traductor indexado bajo la siguiente escala formal:<br /><br /></li>
+</ul>
+<table border="1" class="exe-table" style="width: 40.723%; height: 272px;">
+<tbody>
+<tr style="height: 41.0938px;">
+<th style="width: 100%; text-align: center; vertical-align: middle; height: 41.0938px;">Calificaciones cualitativas </th>
+</tr>
+<tr style="height: 41.0938px;">
+<td style="width: 100%; vertical-align: middle; text-align: center; height: 41.0938px;">INSUFICIENTE (IN) = 3.0</td>
+</tr>
+<tr style="height: 41.0938px;">
+<td style="width: 100%; vertical-align: middle; text-align: center; height: 41.0938px;">SUFICIENTE (SU) = 5.0</td>
+</tr>
+<tr style="height: 41.0938px;">
+<td style="width: 100%; vertical-align: middle; text-align: center; height: 41.0938px;">BIEN (BI) = 6.0</td>
+</tr>
+<tr style="height: 41.0938px;">
+<td style="width: 100%; vertical-align: middle; text-align: center; height: 41.0938px;">NOTABLE (NT) = 7.5</td>
+</tr>
+<tr style="height: 41.0938px;">
+<td style="width: 100%; vertical-align: middle; text-align: center; height: 41.0938px;">SOBRESALIENTE (SB) = 9.0</td>
+</tr>
+<tr style="height: 41.0938px;">
+<td style="width: 100%; vertical-align: middle; text-align: center; height: 41.0938px;">NO PRESENTADO (NP) = 0.0</td>
+</tr>
+</tbody>
+</table>
+<p style="text-align: justify; padding-left: 40px;"><br /></p>
+<p style="text-align: justify; padding-left: 40px;">Si la calificación original ya es numérica, se valida su consistencia dentro del rango matemático [1.0, 10.0]. Las notas bajo el contexto normativo LOMLOE son sometidas a una función específica de normalización curricular, mientras que los registros procedentes de la ley LOMCE se asimilan directamente con su valor numérico decimal original.</p>
+<p style="text-align: justify;">Una vez finalizada la persistencia de los datos en el modelo relacional, el <strong>sistema ejecuta de forma interna y automatizada el motor analítico de ALMENDRA</strong>. Este disparador (trigger) <strong>inicia los procesos de cálculo de los perfiles competenciales, las derivas competenciales y las alertas de intervención pedagógica</strong> aplicables al grupo-aula.</p>
+<figure class="exe-figure position-center" style="width: 619px;">
+<div class="figcaption header"><strong>Calificaciones estudiante objeto del parseo</strong></div>
+<img src="../content/resources/imagen8.jpg" width="619" height="657" alt="" /></figure>
+</div>
+</div>
+</div>
+</article>
+</div></main><div class="nav-buttons">
+<a href="../html/arquitectura-del-programa-y-metodologia-del-sistem.html" title="Anterior" class="nav-button nav-button-left"><span>Anterior</span></a>
+<a href="../html/logica-algoritmica-de-normalizacion-curricular.html" title="Siguiente" class="nav-button nav-button-right"><span>Siguiente</span></a>
+</div>
+<footer id="siteFooter" class="siteFooter-empty"><div id="siteFooterContent"></div></footer>
+</div>
+<p id="made-with-eXe"> <a href="https://exelearning.net/" target="_blank" rel="noopener"> <span>Creado con eXeLearning <span>(Ventana nueva)</span></span></a></p>
+</body>
+</html>

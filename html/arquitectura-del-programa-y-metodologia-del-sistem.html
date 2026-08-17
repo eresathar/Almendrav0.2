@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es" id="exe-page-mrou6wzu-w5r30zxe0">
+<head>
+<meta charset="utf-8">
+<meta name="generator" content="eXeLearning v4.0.3">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Arquitectura del programa y metodología del sistema | ALMENDRA v0.2</title>
+<link rel="icon" type="image/x-icon" href="../libs/favicon.ico">
+<script>document.querySelector("html").classList.add("js");</script><script src="../libs/jquery/jquery.min.js"> </script><script src="../libs/common_i18n.js"> </script><script src="../libs/common.js"> </script><script src="../libs/exe_export.js"> </script><script>window.exeXapi={"odeId":"20260717140626S5W5PT","packageTitle":"ALMENDRA v0.2","language":"es"};</script><script src="../libs/xapi/exe_xapi.js"> </script><script src="../libs/bootstrap/bootstrap.bundle.min.js"> </script><link rel="stylesheet" href="../libs/bootstrap/bootstrap.min.css">
+<script src="../idevices/text/text.js"></script><link rel="stylesheet" href="../idevices/text/text.css">
+<link rel="stylesheet" href="../content/css/base.css"><script src="../theme/style.js"> </script><link rel="stylesheet" href="../theme/style.css">
+</head>
+<body class="exe-export exe-web-site">
+<script>document.body.className+=" js"</script>
+<div class="exe-content exe-export pre-js siteNav-hidden"><a href="#page-mrou6wzu-w5r30zxe0" id="skipNav">Skip to content</a> <nav id="siteNav">
+<ul>
+<li> <a href="../index.html" class="main-node daddy">Introducción y origen de ALMENDRA</a>
+<ul class="other-section">
+<li> <a href="../html/desafios-de-la-docencia-actual.html" class="no-ch">Desafíos de la docencia actual</a>
+</li>
+<li> <a href="../html/genesis-del-proyecto.html" class="no-ch">Génesis del proyecto</a>
+</li>
+<li> <a href="../html/hacia-un-sistema-experto.html" class="no-ch">Hacia un sistema experto</a>
+</li>
+<li> <a href="../html/primera-version-almendra-v01.html" class="no-ch">Primera versión Almendra v0.1</a>
+</li>
+</ul>
+</li>
+<li class="active"> <a href="../html/arquitectura-del-programa-y-metodologia-del-sistem.html" class="active daddy">Arquitectura del programa y metodología del sistema</a>
+<ul class="other-section">
+<li> <a href="../html/metodologia-e-ingesta-de-datos.html" class="no-ch">Metodología e ingesta de datos</a>
+</li>
+<li> <a href="../html/logica-algoritmica-de-normalizacion-curricular.html" class="no-ch">Lógica algorítmica de normalización curricular</a>
+</li>
+<li> <a href="../html/metodologia-confeccion-informes-diagnostico.html" class="daddy">Metodología confección informes diagnóstico</a>
+<ul class="other-section">
+<li> <a href="../html/atencion-a-la-diversidad.html" class="no-ch">Atención a la diversidad</a>
+</li>
+<li> <a href="../html/modelado-analitico-del-grupo-clase.html" class="no-ch">Modelado analítico del grupo clase</a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li> <a href="../html/metodologia-generacion-archivos-markdown.html" class="no-ch">Metodología generación archivos markdown</a>
+</li>
+<li> <a href="../html/guia-de-instalacion-y-requisitos-tecnicos.html" class="no-ch">Guía de instalación y requisitos técnicos</a>
+</li>
+<li> <a href="../html/tutorial-de-funcionamiento-y-flujo-de-trabajo.html" class="daddy">Tutorial de funcionamiento y flujo de trabajo</a>
+<ul class="other-section">
+<li> <a href="../html/exploracion-interfaz-y-estructura-de-menus.html" class="no-ch">Exploración interfaz y estructura de menús</a>
+</li>
+<li> <a href="../html/carga-de-expedientes-y-creacion-de-grupos-clase.html" class="no-ch">Carga de expedientes y creación de grupos clase</a>
+</li>
+<li> <a href="../html/obtencion-de-informes-diagnostico-y-analiticas.html" class="no-ch">Obtención de informes diagnóstico y análiticas</a>
+</li>
+<li> <a href="../html/generacion-de-prompts-maestros-en-formato-markdown.html" class="no-ch">Generación de prompts maestros en formato Markdown.md para modelos externos</a>
+</li>
+</ul>
+</li>
+</ul>
+</nav><main id="page-mrou6wzu-w5r30zxe0" class="page"> 
+<header class="main-header">
+<div class="package-header"><p class="package-title">ALMENDRA v0.2</p>
+<p class="package-subtitle">Asistente de Lógica y Mejora Educativa Normalizada mediante Diagnóstico y Recomendación Adaptativa</p></div>
+<div class="page-header"><h1 class="page-title">Arquitectura del programa y metodología del sistema</h1></div>
+</header><div id="page-content-page-mrou6wzu-w5r30zxe0" class="page-content">
+<article id="block-mrs0cmyf-p4jxpe300" class="box">
+<header class="box-head">
+<div class="box-icon exe-icon">
+<img src="../theme/icons/history.svg" alt="">
+</div>
+<h1 class="box-title">Metodología y arquitectura</h1>
+</header>
+<div class="box-content">
+<div id="idevice-1784478375734-qgb8yyerm" class="idevice_node text" data-idevice-path="../idevices/text/" data-idevice-type="text" data-idevice-component-type="json" data-idevice-json-data="{&quot;ideviceId&quot;:&quot;idevice-1784478375734-qgb8yyerm&quot;}">
+<div class="exe-text-template">
+    <p style="text-align: justify;">El diseño de la <strong>arquitectura de ALMENDRA responde al modelado estructurado de un sistema experto </strong>de base local e interoperabilidad híbrida. La ingeniería del software se ha <strong>supeditado por completo a las necesidades de la práctica docente</strong> real en Aragón, persiguiendo <strong>tres metas operativas fundamentales</strong>: el <strong>blindaje normativo bajo el marco de la LOMLOE</strong>, la <strong>automatización de procesos de obtención de analíticas de aprendizaje</strong> y la <strong>personalización de la respuesta educativa </strong>en base al Diseño Universal para el Aprendizaje (DUA).</p>
+<p style="text-align: justify;">Para dar respuesta a estos desafíos sin comprometer la seguridad de la información institucional ni la integridad de los datos protegidos del menor, el software articula su comportamiento en torno a los siguientes principios esenciales:</p>
+</div>
+</div>
+</div>
+</article><article id="block-mrs0roof-z3to5k9uf" class="box">
+<header class="box-head">
+<div class="box-icon exe-icon">
+<img src="../theme/icons/activity.svg" alt="">
+</div>
+<h1 class="box-title">Principio de soberanía de datos y ejecución local</h1>
+</header>
+<div class="box-content">
+<div id="idevice-1784479077806-bucv93ovz" class="idevice_node text" data-idevice-path="../idevices/text/" data-idevice-type="text" data-idevice-component-type="json" data-idevice-json-data="{&quot;ideviceId&quot;:&quot;idevice-1784479077806-bucv93ovz&quot;}">
+<div class="exe-text-template">
+    <p style="text-align: justify;">A diferencia de las soluciones convencionales basadas íntegramente en la nube, <strong>ALMENDRA procesa</strong> el historial académico, las contingencias del grupo-clase y las variables del alumnado ACNEAE <strong>en el almacenamiento físico del puesto de trabajo</strong> anfitrión. <strong>Este enfoque garantiza el cumplimiento estricto de los reglamentos de protección de datos</strong> al ejecutar las fases críticas de ingesta, parsing sintáctico y normalización métrica en un <strong>entorno local y estanco, aislado de servidores externos</strong>.</p>
+</div>
+</div>
+</div>
+</article><article id="block-mrs0umzy-v0wpiacgs" class="box">
+<header class="box-head">
+<div class="box-icon exe-icon">
+<img src="../theme/icons/activity.svg" alt="">
+</div>
+<h1 class="box-title">Principio de blindaje curricular y mitigación de alucionaciones</h1>
+</header>
+<div class="box-content">
+<div id="idevice-1784479215597-odfm7nj3y" class="idevice_node text" data-idevice-path="../idevices/text/" data-idevice-type="text" data-idevice-component-type="json" data-idevice-json-data="{&quot;ideviceId&quot;:&quot;idevice-1784479215597-odfm7nj3y&quot;}">
+<div class="exe-text-template">
+    <p style="text-align: justify;">ALMENDRA no delega la estructuración curricular en llamadas directas a IA, sino que <strong>opera mediante un motor relacional determinista</strong> que actúa como ancla inamovible de la normativa oficial. A partir de esta base, el programa genera de forma ágil <strong>archivos Markdown hipercontextualizados</strong> que sintetizan con exactitud la realidad del aula, los criterios oficiales y las necesidades pedagógicas. Al transferir estos bloques a cualquier modelo de lenguaje externo, el docente ahorra tiempo y elimina el riesgo de alucinaciones, asegurando que cualquier propuesta generada respete estrictamente el marco curricular y el diagnóstico clínico del grupo.</p>
+</div>
+</div>
+</div>
+</article><article id="block-mrs12f3b-lfavhd478" class="box">
+<header class="box-head">
+<div class="box-icon exe-icon">
+<img src="../theme/icons/activity.svg" alt="">
+</div>
+<h1 class="box-title">Principio de interoperabilidad desacoplada y abierta</h1>
+</header>
+<div class="box-content">
+<div id="idevice-1784479578598-6w2r8wq9r" class="idevice_node text" data-idevice-path="../idevices/text/" data-idevice-type="text" data-idevice-component-type="json" data-idevice-json-data="{&quot;ideviceId&quot;:&quot;idevice-1784479578598-6w2r8wq9r&quot;}">
+<div class="exe-text-template">
+    <p style="text-align: justify;"><strong>ALMENDRA se concibe como un entorno flexible y modular</strong> que garantiza la plena soberanía del docente. Mediante la generación automatizada de contextos estructurados y la persistencia de datos en formatos abiertos universales (Markdown y esquemas normalizados), la aplicación<strong> traslada el valor del análisis clínico y el rigor normativo fuera de sus propios límites</strong>. Este diseño desacoplado elimina dependencias propietarias y <strong>facilita al profesorado la exportación limpia e instantánea de sus directrices instruccionales</strong> a cualquier ecosistema de inteligencia artificial exógeno, editor de texto o plataforma de gestión educativa, sin fricción y adaptándose a su flujo de trabajo habitual.</p>
+</div>
+</div>
+</div>
+</article>
+</div></main><div class="nav-buttons">
+<a href="../html/primera-version-almendra-v01.html" title="Anterior" class="nav-button nav-button-left"><span>Anterior</span></a>
+<a href="../html/metodologia-e-ingesta-de-datos.html" title="Siguiente" class="nav-button nav-button-right"><span>Siguiente</span></a>
+</div>
+<footer id="siteFooter" class="siteFooter-empty"><div id="siteFooterContent"></div></footer>
+</div>
+<p id="made-with-eXe"> <a href="https://exelearning.net/" target="_blank" rel="noopener"> <span>Creado con eXeLearning <span>(Ventana nueva)</span></span></a></p>
+</body>
+</html>
